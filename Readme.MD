@@ -1,4 +1,4 @@
-# RestAssured [![RestAssured][img src="https://rest-assured.io/img/name-transparent.png"]][RestAssured]
+# <img src="https://rest-assured.io/img/name-transparent.png">
 
 <img src="https://rest-assured.io/img/logo-transparent.png" align="right"
 alt="restassured logo" width="120" height="178">
