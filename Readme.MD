@@ -1,7 +1,7 @@
-# RestAssured [![Cult Of Martians][cult-img]][cult]
+# RestAssured [![RestAssured][img src="https://rest-assured.io/img/name-transparent.png"]][RestAssured]
 
 <img src="https://rest-assured.io/img/logo-transparent.png" align="right"
-alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
+alt="restassured logo" width="120" height="178">
 
 Size Limit is a performance budget tool for JavaScript. It checks every commit
 on CI, calculates the real cost of your JS for end-users and throws an error
