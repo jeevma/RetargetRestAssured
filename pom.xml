@@ -10,19 +10,21 @@
   <name>RetargetRestAssured</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <restassuredVersion>5.3.1</restassuredVersion>
-    <commonscodecVersion>1.16.0</commonscodecVersion>
-    <testngVersion>7.8.0</testngVersion>
-    <jacksonVersion>2.15.2</jacksonVersion>
-    <gsonVersion>2.10.1</gsonVersion>
-    <extentreportVersion>5.1.0</extentreportVersion>
-    <javafakerVersion>1.0.2</javafakerVersion>
-    <lombokVersion>1.18.28</lombokVersion>
-    <commonlangVersion>3.13.0</commonlangVersion>
-    <snakeyamlVersion>2.1</snakeyamlVersion>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <restassuredVersion>5.3.1</restassuredVersion>
+        <commonscodecVersion>1.16.0</commonscodecVersion>
+        <testngVersion>7.8.0</testngVersion>
+        <jacksonVersion>2.15.2</jacksonVersion>
+        <gsonVersion>2.10.1</gsonVersion>
+        <extentreportVersion>5.1.0</extentreportVersion>
+        <javafakerVersion>1.0.2</javafakerVersion>
+        <lombokVersion>1.18.28</lombokVersion>
+        <commonlangVersion>3.13.0</commonlangVersion>
+        <snakeyamlVersion>2.1</snakeyamlVersion>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
