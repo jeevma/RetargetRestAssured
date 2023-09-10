@@ -5,25 +5,20 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.RestUtils;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ProductTests {
 
     @Test
-    public void addProduct(){
-       Response response =  RestAssured.given().log().all()
-                .baseUri("https://fakestoreapi.com/products")
-                .contentType(ContentType.JSON)
-                .body("{\n" +
-                        "    \"title\": \"test product\",\n" +
-                        "    \"price\": 13.5,\n" +
-                        "    \"description\": \"lorem ipsum set\",\n" +
-                        "    \"image\": \"https: //i.pravatar.cc\",\n" +
-                        "    \"category\": \"electronic\"\n" +
-                        "}")
-                .post()
-                        .then().log().all().extract().response();
+    public void addProduct() {
 
+        String endPoint = "https://fakestoreapi.com/products";
+        //String payload = Payloads.getCreateProductPayloadFromString("test product", "13.8", "This is a test product", "https: //i.pravatar.cc", "electronic");
+        Map<String, Object> payload = Payloads.getCreateProductPayloadFromMap("test product", "13.8", "This is a test product", "https: //i.pravatar.cc", "electronic");
+        Response response = RestUtils.performPost(endPoint, payload, new HashMap<>());
         Assert.assertEquals(response.statusCode(), 200);
-
     }
 }
