@@ -1,0 +1,7 @@
+API - Application Programming Interface
+ ResatAssured - A java library for testing and validating REST services or API or Web Services
+ Build on top of HTTP Builder and support POST, GE, PUT, DELETE, OPTIONS, PATCH, and HEAD requests
+
+ Static Imports in Java
+To use non static methods we need to create an object of the class that have the non static methods
+Static methods can be used calling a class reference, no need to create the object
